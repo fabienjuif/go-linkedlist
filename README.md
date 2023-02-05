@@ -23,6 +23,8 @@ package main
 
 import (
 	"fmt"
+
+	"github.com/fabienjuif/go-linkedlist"
 )
 
 type Song struct {
@@ -32,7 +34,7 @@ type Song struct {
 
 func main() {
 	// best 2000 rock songs according to https://us.napster.com/blog/post/the-50-best-rock-songs-of-2000
-	ll := NewLinkedList[Song]()
+	ll := linkedlist.NewLinkedList[Song]()
 	ll.Append(&Song{
 		title:  "Californication",
 		artist: "Red Hot Chili Peppers",
